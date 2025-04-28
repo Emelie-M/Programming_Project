@@ -1,12 +1,17 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all they need to know. The comments should usually include at least:
-------------------------------------------------------------------------
+# Strava Project
 
-PROJECT TITLE: Strava Project
-PURPOSE OF PROJECT: To create an app like Strava
-VERSION or DATE: April 28, 2025
-HOW TO START THIS PROJECT:
-AUTHORS: Emelie Mejia-Cornejo & Giuliano Proietti
-USER INSTRUCTIONS:
+This project is about creating an app like Strava. To make a prototype of a social network for athletes for them to log their activities.
+
+## Authors
+
+Giuliano Proietti and Emelie Mejia-Cornejo
+
+## Usage
+
+
+## Date
+April 28, 2025
+
+## License
+
+[MIT](https://github.com/Emelie-M/Programming_Project/blob/master/LICENSE)
