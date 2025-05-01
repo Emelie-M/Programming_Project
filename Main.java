@@ -8,16 +8,16 @@ import java.util.ArrayList;
  */
 public class Main
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    
+
 
     /**
      * Constructor for objects of class Main
      */
     public Main()
     {
-        // initialise instance variables
-        x = 0;
+        
+        
     }
     
     public void addAthlete(String Name, int DOB, double weight, String username)
@@ -31,8 +31,23 @@ public class Main
         // prints all athletes
     }
     
-    public void listExistingActivities()
+    public void listAllActivities()
     {
         //Gets all activities on the Activities class and prints them
+    }
+    
+    public void listActivitiesByAthlete()
+    {
+    
+    }
+    
+    public void listActivitiesByMode()
+    {
+    
+    }
+    
+    public void getDistanceByAthlete()
+    {
+        
     }
 }

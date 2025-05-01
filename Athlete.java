@@ -8,27 +8,34 @@ import java.util.HashMap;
  */
 public class Athlete
 {
-    // instance variables - replace the example below with your own
-    private int x;
 
     /**
      * Constructor for objects of class Athlete
      */
     public Athlete()
     {
-        // initialise instance variables
-        x = 0;
+        
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public String getName(String firstName, String lastName)
     {
-        // put your code here
-        return x + y;
+        return firstName + lastName;
+    }
+    
+    public int getAge(int day, int month, int year)
+    {
+        int currentYear = 2025;
+        int Age = currentYear - year;
+        return Age;    
+    }
+    
+    public void getGender()
+    {
+    
+    }
+    
+    public void getUsername()
+    {
+    
     }
 }
