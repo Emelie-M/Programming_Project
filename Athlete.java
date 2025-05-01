@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * Write a description of class Athlete here.
@@ -8,31 +8,34 @@ import java.util.HashMap;
  */
 public class Athlete
 {
-
+    
     /**
      * Constructor for objects of class Athlete
      */
     public Athlete()
     {
+        /*String name = name;
+        int age = age;
+        double weight = weight;*/
         
     }
-
+    
     public String getName(String firstName, String lastName)
     {
         return firstName + lastName;
     }
     
-    public int getAge(int day, int month, int year)
+    public int getAge(int yearOfBirth)
     {
         int currentYear = 2025;
-        int Age = currentYear - year;
+        int Age = currentYear - yearOfBirth;
         return Age;    
     }
     
-    public void getGender()
+    /*public String getGender()
     {
-    
-    }
+        
+    }*/
     
     public void getUsername()
     {
