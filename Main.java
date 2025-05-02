@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class Main
 {
-    
+    private Athlete athlete;
 
 
     /**
@@ -16,7 +16,7 @@ public class Main
      */
     public Main()
     {
-        
+    
         
     }
     

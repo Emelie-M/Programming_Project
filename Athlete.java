@@ -8,37 +8,58 @@ import java.util.*;
  */
 public class Athlete
 {
+    private String firstName;
+    private String lastName;
+    private int DOB;
+    private double weight;
+    private String Gender;
+    
     
     /**
      * Constructor for objects of class Athlete
      */
-    public Athlete()
+    public Athlete(String firstName, String lastName,int DOB, double weight)
     {
-        /*String name = name;
-        int age = age;
-        double weight = weight;*/
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.DOB = DOB;
+        this.weight = weight;
+        setGender();
         
     }
     
-    public String getName(String firstName, String lastName)
+    public String getName()
     {
-        return firstName + lastName;
+        return firstName + " " + lastName;
     }
     
-    public int getAge(int yearOfBirth)
+    public int getAge()
     {
         int currentYear = 2025;
-        int Age = currentYear - yearOfBirth;
+        int Age = currentYear - DOB;
         return Age;    
     }
     
-    /*public String getGender()
+    public void setGender()
     {
-        
-    }*/
+        Scanner inputGender = new Scanner(System.in);
+        for (gender Gender : gender.values())
+        {
+            System.out.println(Gender);
+        }
+        System.out.print("Please enter your Gender from the list above : ");
+        String userGender = inputGender.nextLine();
+        Gender = userGender;
+    }
     
-    public void getUsername()
+    public String getGender()
     {
+        return Gender;
+    }
     
+    public String getUsername()
+    {
+        String username = firstName + lastName + DOB;
+        return username;
     }
 }
