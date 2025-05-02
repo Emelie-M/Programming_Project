@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Write a description of class Main here.
@@ -16,13 +16,21 @@ public class Main
      */
     public Main()
     {
-    
         
     }
     
-    public void addAthlete(String Name, int DOB, double weight, String username)
+    /*public String login()
     {
-        //user creates an account
+        Scanner Login = new Scanner(System.in);
+        
+        System.out.print("Please enter Username : ");
+        String userLogin = Login.nextLine();
+        return userLogin;
+    }*/
+    
+    public void addAthlete(String firstName,String lastName, int DOB, double weight)
+    {
+        
     }
     
     public void listAllAthletes()
