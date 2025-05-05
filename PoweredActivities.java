@@ -5,13 +5,13 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class PoweredActivities extends Activities
-{
+//public class PoweredActivities extends Activities
+/*{
 
     /**
      * Constructor for objects of class PoweredActivities
      */
-    public PoweredActivities()
+  /*  public PoweredActivities()
     {
         
     }
@@ -21,3 +21,4 @@ public class PoweredActivities extends Activities
         
     }
 }
+*/
