@@ -13,7 +13,7 @@ public class Athlete
     private int DOB;
     private double weight;
     private String Gender;
-    
+    private Gender gender;
     
     /**
      * Constructor for objects of class Athlete
@@ -43,7 +43,7 @@ public class Athlete
     public void setGender()
     {
         Scanner inputGender = new Scanner(System.in);
-        for (gender Gender : gender.values())
+        for (Gender Gender : gender.values())
         {
             System.out.println(Gender);
         }
