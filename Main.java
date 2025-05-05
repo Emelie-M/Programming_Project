@@ -9,7 +9,7 @@ import java.util.*;
 public class Main
 {
     private Athlete athlete;
-
+    private Activities activities;
 
     /**
      * Constructor for objects of class Main
