@@ -56,7 +56,6 @@ public class Main
             System.out.println("Can't understand, please enter a number");
       }
     }
-
     
     private void addAthlete(Scanner scanner)
     {
@@ -70,12 +69,13 @@ public class Main
         while(gender == null){
             System.out.println("Please enter your gender among this list:");
             System.out.println("Male\nFemale\nNon_Binary\nOther");
-            gender = Gender.toString(scanner.nextLine());
+            gender = Gender.toString(scanner.nextLine().toUpperCase());
             if (gender == null){
                 System.out.println("Invalid answer, please try again");
             }
         }
     }
+    
        public void addActivity()
     {
        Activities a = Activities.createFromUserInput();
