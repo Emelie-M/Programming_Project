@@ -10,7 +10,7 @@ public class Athlete
 {
     private String firstName;
     private String lastName;
-    private int DOB;
+    private int YOB;
     private double weight;
     private String Gender;
     private Gender gender;
@@ -18,11 +18,11 @@ public class Athlete
     /**
      * Constructor for objects of class Athlete
      */
-    public Athlete(String firstName, String lastName,int DOB, double weight)
+    public Athlete(String firstName, String lastName,int YOB, double weight)
     {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.DOB = DOB;
+        this.YOB = YOB;
         this.weight = weight;
         setGender();
         
@@ -36,7 +36,7 @@ public class Athlete
     public int getAge()
     {
         int currentYear = 2025;
-        int Age = currentYear - DOB;
+        int Age = currentYear - YOB;
         return Age;    
     }
     
@@ -59,7 +59,7 @@ public class Athlete
     
     public String getUsername()
     {
-        String username = firstName + lastName + DOB;
+        String username = firstName + lastName + YOB;
         return username;
     }
 }

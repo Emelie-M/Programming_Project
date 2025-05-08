@@ -46,7 +46,7 @@ public class Main
         }
     }
     
-    public void addAthlete(Scanner scanner)
+    private void addAthlete(Scanner scanner)
     {
         System.out.println("Please enter your first name :");
         String firstName = scanner.nextLine();
@@ -54,10 +54,15 @@ public class Main
         String lastName = scanner.nextLine();
         System.out.println("Please enter your year of birth :");
         int YOB = scanner.nextInt();
-        System.out.println("Please enter your gender among this list:");
-        System.out.println("Male\nFemale\nNon_Binary\nOther");
-        String input = scanner.nextLine().toUpperCase();
-        Gender gender = Gender.valueOf(input);
+        Gender gender = null;
+        while(gender == null){
+            System.out.println("Please enter your gender among this list:");
+            System.out.println("Male\nFemale\nNon_Binary\nOther");
+            gender = Gender.toString(scanner.nextLine());
+            if (gender == null){
+                System.out.println("Invalid answer, please try again");
+            }
+        }
     }
     
     public void listAllAthletes()
