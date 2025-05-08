@@ -1,24 +1,23 @@
 
-/**
- * Write a description of class PoweredActivities here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-//public class PoweredActivities extends Activities
-/*{
+public class PoweredActivities extends Activities
+{
+    private Equipment equipment;
 
-    /**
-     * Constructor for objects of class PoweredActivities
-     */
-  /*  public PoweredActivities()
+
+    public PoweredActivities(String name, double distance, double duration, Modality mode, double athleteWeight, String description, Equipment equipment)
     {
-        
+        super(name, distance, duration, mode, athleteWeight, description);
+        this.equipment = equipment;
     }
 
-    public void listPoweredActivities()
+    public Equipment getEquipment()
     {
-        
+        return equipment;
+    }
+
+    @Override
+    public String toString()
+    {
+        return String.format("%s [%s] — equipment: %s", getName(), getMode(), equipment.getName());
     }
 }
-*/

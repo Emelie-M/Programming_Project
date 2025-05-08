@@ -7,14 +7,16 @@
  */
 public class Equipment
 {
+    private String name;
 
     /**
      * Constructor for objects of class Equipment
      */
-    public Equipment()
+    public Equipment(String name)
     {
-        
+       this.name   = name;
     }
+
 
     /**
      * An example of a method - replace this comment with your own
@@ -22,8 +24,9 @@ public class Equipment
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void getName()
+    public String getName()
     {
-        
+        return name;
     }
+ 
 }
