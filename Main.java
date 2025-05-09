@@ -9,8 +9,9 @@ import java.util.*;
 public class Main
 {
     private Athlete athlete;
-    private Activities activities;
+    private Activities activitie;
     List<Athlete> athletes = new ArrayList<>(); 
+    List<Activities> activities = new ArrayList<>();
 
     /**
      * Constructor for objects of class Main
@@ -32,7 +33,8 @@ public class Main
           System.out.println("2. List all athletes");
           System.out.println("3. List all activities");
           System.out.println("4. Add new activity");
-          System.out.println("5. Quit");
+          System.out.println("5. List activities by athlete");
+          System.out.println("6. Quit");
           System.out.println("--------------------------------------------------------------");
     
           int choice = scanner.nextInt();
@@ -50,12 +52,14 @@ public class Main
                 listAllActivities();
                 break;
             case 4:
-                addActivity();
+                addActivity(scanner);
                 break;
             case 5:
+                listActivitiesByAthlete(scanner);
+                break;
+            case 6:
                 System.out.println("Bye bye :)");
                 running = false;
-                scanner.close();
                 break;
             default : 
                 System.out.println("Can't understand, please enter a number");
@@ -66,7 +70,7 @@ public class Main
     
     private void addAthlete(Scanner scanner)
     {
-        Athlete athlete = Athlete.createAthleteFromInput();
+        Athlete athlete = Athlete.createAthlete();
         athletes.add(athlete);
         
         System.out.println("Athlete created: ");
@@ -75,9 +79,20 @@ public class Main
         System.out.println("Athlete's Gender: " + athlete.getGender());
     }
     
-       public void addActivity()
+    public void addActivity(Scanner scanner)
     {
-       Activities a = Activities.createFromUserInput();
+      System.out.println("Enter the full name of the athlete:");
+      String nameInput = scanner.nextLine();
+      Athlete selectedAthlete = null;
+      for (Athlete athlete : athletes) {
+          if (athlete.getName().equalsIgnoreCase(nameInput)) {
+              selectedAthlete = athlete;
+              break;
+          }
+      }    
+    
+      Activities a = Activities.createFromUserInput();
+      selectedAthlete.addActivity(a);
       System.out.println("Activity created: " + a.getName() + ", " + a.getMode() + ", " + a.getCaloriesBurned() + " calories");
     }
 
@@ -94,9 +109,20 @@ public class Main
         //Gets all activities on the Activities class and prints them
     }
     
-    public void listActivitiesByAthlete()
+    public void listActivitiesByAthlete(Scanner scanner)
     {
+        System.out.println("Enter the athlete's full name:");
+        String nameInput = scanner.nextLine().trim();
     
+        for (Athlete athlete : athletes) {
+            if (athlete.getName().equalsIgnoreCase(nameInput)) {
+                System.out.println("Activities for " + athlete.getName() + ":");
+                for (Activities a : athlete.getActivities()) {
+                    System.out.println("- " + a.getName() + " (" + a.getMode() + ", " + a.getCaloriesBurned() + " cal)");
+                }
+                return;
+            }
+        }
     }
     
     public void listActivitiesByMode()

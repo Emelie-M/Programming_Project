@@ -12,6 +12,7 @@ public class Athlete
     private String lastName;
     private int YOB;
     private Gender gender;
+    private List<Activities> activities = new ArrayList<>();
     
     /**
      * Constructor for objects of class Athlete
@@ -25,7 +26,7 @@ public class Athlete
         
     }
     
-    public static Athlete createAthleteFromInput() {
+    public static Athlete createAthlete() {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Please enter your first name :");
@@ -70,9 +71,11 @@ public class Athlete
         return gender;
     }
     
-    /*public String getUsername()
-    {
-        String username = firstName + lastName + YOB;
-        return username;
-    }**/
+    public void addActivity(Activities activity) {
+        activities.add(activity);
+    }
+    
+    public List<Activities> getActivities() {
+        return activities;
+    }
 }
