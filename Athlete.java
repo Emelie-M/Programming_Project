@@ -11,21 +11,46 @@ public class Athlete
     private String firstName;
     private String lastName;
     private int YOB;
-    private double weight;
-    private String Gender;
     private Gender gender;
     
     /**
      * Constructor for objects of class Athlete
      */
-    public Athlete(String firstName, String lastName,int YOB, double weight)
+    public Athlete(String firstName, String lastName,int YOB, Gender gender)
     {
         this.firstName = firstName;
         this.lastName = lastName;
         this.YOB = YOB;
-        this.weight = weight;
-        setGender();
+        this.gender = gender;
         
+    }
+    
+    public static Athlete createAthleteFromInput() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Please enter your first name :");
+        String firstName = scanner.nextLine();
+        
+        System.out.println("Please enter your last name :");
+        String lastName = scanner.nextLine();
+        
+        System.out.println("Please enter your year of birth :");
+        int YOB = scanner.nextInt();
+        scanner.nextLine();
+        
+        Gender gender = null;
+        while(gender == null){
+            System.out.println("Please enter your gender among this list:");
+            System.out.println("Male\nFemale\nNon_Binary\nOther");
+            try {
+                String input = scanner.nextLine().toUpperCase();
+                gender = Gender.valueOf(input);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Invalid answer, please try again.");
+            }
+        }
+        
+        return new Athlete(firstName, lastName, YOB, gender);
     }
     
     public String getName()
@@ -40,26 +65,14 @@ public class Athlete
         return Age;    
     }
     
-    public void setGender()
+    public Gender getGender()
     {
-        Scanner inputGender = new Scanner(System.in);
-        for (Gender Gender : gender.values())
-        {
-            System.out.println(Gender);
-        }
-        System.out.print("Please enter your Gender from the list above : ");
-        String userGender = inputGender.nextLine();
-        Gender = userGender;
+        return gender;
     }
     
-    public String getGender()
-    {
-        return Gender;
-    }
-    
-    public String getUsername()
+    /*public String getUsername()
     {
         String username = firstName + lastName + YOB;
         return username;
-    }
+    }**/
 }

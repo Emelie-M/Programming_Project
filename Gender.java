@@ -11,9 +11,4 @@ public enum Gender
     FEMALE,
     NON_BINARY,
     OTHER;
-    
-    public static Gender toString(String input)
-    {
-        return Gender.valueOf(input.toUpperCase());
-    }
 }

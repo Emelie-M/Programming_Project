@@ -10,7 +10,7 @@ public class Main
 {
     private Athlete athlete;
     private Activities activities;
-    private Gender gender;
+    List<Athlete> athletes = new ArrayList<>(); 
 
     /**
      * Constructor for objects of class Main
@@ -24,67 +24,69 @@ public class Main
     {
       Scanner scanner = new Scanner(System.in);
       System.out.println("Welcome! This is an app like Strava\nwhere you can log your activities.");
-      System.out.println("--------------------------------------------------------------");
-      System.out.println("1. Add new athlete");
-      System.out.println("2. List all athletes");
-      System.out.println("3. List all activities");
-      System.out.println("4. Add new activity");
-      System.out.println("5. Quit");
-
-      int choice = scanner.nextInt();
-      scanner.nextLine(); 
-
-       switch(choice)
-       {
-        case 1:
-            addAthlete(scanner);
-            break;
-        case 2: 
-            listAllAthletes();
-            break;
-        case 3:
-            listAllActivities();
-            break;
-        case 4:
-            addActivity();
-            break;
-        case 5:
-            System.out.println("Bye bye :)");
-            scanner.close();
-            break;
-        default : 
-            System.out.println("Can't understand, please enter a number");
+      boolean running = true;
+      
+      while (running) {
+          System.out.println("--------------------------------------------------------------");
+          System.out.println("1. Add new athlete");
+          System.out.println("2. List all athletes");
+          System.out.println("3. List all activities");
+          System.out.println("4. Add new activity");
+          System.out.println("5. Quit");
+          System.out.println("--------------------------------------------------------------");
+    
+          int choice = scanner.nextInt();
+          scanner.nextLine(); 
+    
+           switch(choice)
+           {
+            case 1:
+                addAthlete(scanner);
+                break;
+            case 2: 
+                listAllAthletes();
+                break;
+            case 3:
+                listAllActivities();
+                break;
+            case 4:
+                addActivity();
+                break;
+            case 5:
+                System.out.println("Bye bye :)");
+                running = false;
+                scanner.close();
+                break;
+            default : 
+                System.out.println("Can't understand, please enter a number");
+          }
       }
+      scanner.close();
     }
     
     private void addAthlete(Scanner scanner)
     {
-        System.out.println("Please enter your first name :");
-        String firstName = scanner.nextLine();
-        System.out.println("Please enter your last name :");
-        String lastName = scanner.nextLine();
-        System.out.println("Please enter your year of birth :");
-        int YOB = scanner.nextInt();
-        Gender gender = null;
-        while(gender == null){
-            System.out.println("Please enter your gender among this list:");
-            System.out.println("Male\nFemale\nNon_Binary\nOther");
-            gender = Gender.toString(scanner.nextLine().toUpperCase());
-            if (gender == null){
-                System.out.println("Invalid answer, please try again");
-            }
-        }
+        Athlete athlete = Athlete.createAthleteFromInput();
+        athletes.add(athlete);
+        
+        System.out.println("Athlete created: ");
+        System.out.println("Athlete's Full Name: " + athlete.getName());
+        System.out.println("Athlete's Age: " + athlete.getAge());
+        System.out.println("Athlete's Gender: " + athlete.getGender());
     }
     
        public void addActivity()
     {
        Activities a = Activities.createFromUserInput();
-       System.out.println("Activity created: " + a.getName() + ", " + a.getMode() + ", " + a.getCaloriesBurned() + " calories");
+      System.out.println("Activity created: " + a.getName() + ", " + a.getMode() + ", " + a.getCaloriesBurned() + " calories");
     }
+
     public void listAllAthletes()
     {
-        // List all register athletes
-        // prints all athletes
+        System.out.println("List of Athletes:");
+        for (Athlete athlete : athletes) {
+            System.out.println(athlete.getName());
+        }
     }
     
     public void listAllActivities()
