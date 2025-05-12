@@ -34,7 +34,8 @@ public class Main
           System.out.println("3. List all activities");
           System.out.println("4. Add new activity");
           System.out.println("5. List activities by athlete");
-          System.out.println("6. Quit");
+          System.out.println("6. Get total distance by athlete");
+          System.out.println("7. Quit");
           System.out.println("--------------------------------------------------------------");
     
           int choice = scanner.nextInt();
@@ -58,6 +59,9 @@ public class Main
                 listActivitiesByAthlete(scanner);
                 break;
             case 6:
+                getDistanceByAthlete();
+                break;
+            case 7:
                 System.out.println("Bye bye :)");
                 running = false;
                 break;
@@ -93,7 +97,7 @@ public class Main
     
       Activities a = Activities.createFromUserInput();
       selectedAthlete.addActivity(a);
-      System.out.println("Activity created: " + a.getName() + ", " + a.getMode() + ", " + a.getCaloriesBurned() + " calories");
+      System.out.printf("Activity created: %s, %s, %.2f calories%n", a.getName(), a.getMode(), a.getCaloriesBurned());
     }
 
     public void listAllAthletes()
@@ -106,8 +110,15 @@ public class Main
     
     public void listAllActivities()
     {
-        //Gets all activities on the Activities class and prints them
+        System.out.println("List of All Activities:");
+        for (Athlete athlete : athletes) {
+          for (Activities activity : athlete.getActivities()) {
+            System.out.println("- " + activity.getName() + " by " + athlete.getName() +
+                " (" + activity.getMode() + ", " + activity.getCaloriesBurned() + " cal)");
+        }
+       }
     }
+
     
     public void listActivitiesByAthlete(Scanner scanner)
     {
@@ -123,7 +134,7 @@ public class Main
                 return;
             }
         }
-    }
+     }
     
     public void listActivitiesByMode()
     {
@@ -132,8 +143,23 @@ public class Main
     
     public void getDistanceByAthlete()
     {
-        
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Enter the athlete's full name:");
+      String nameInput = scanner.nextLine().trim();
+
+      for (Athlete athlete : athletes) {
+        if (athlete.getName().equalsIgnoreCase(nameInput)) {
+            double totalDistance = 0.0;
+            for (Activities a : athlete.getActivities()) {
+                totalDistance += a.getDistance();
+            }
+            System.out.println("Total distance by " + athlete.getName() + ": " + totalDistance + " km");
+            return;
+        }
+      }
+      System.out.println("Athlete not found.");
     }
+ 
     
      public static void main(String[] args) {
         Main app = new Main();
