@@ -1,10 +1,10 @@
 import java.util.*;
 
 /**
- * Write a description of class Athlete here.
+ * 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Emelie Mejia-Cornejo)
+ * @version (5/13/2025)
  */
 public class Athlete
 {
@@ -26,6 +26,9 @@ public class Athlete
         
     }
     
+    /**
+     * This methodes creates athletes by asking its name, year of birth & gender
+     */
     public static Athlete createAthlete() {
         Scanner scanner = new Scanner(System.in);
         
@@ -54,11 +57,17 @@ public class Athlete
         return new Athlete(firstName, lastName, YOB, gender);
     }
     
+    /**
+     * return full name
+     */
     public String getName()
     {
         return firstName + " " + lastName;
     }
     
+    /**
+     * returns age
+     */
     public int getAge()
     {
         int currentYear = 2025;
@@ -66,15 +75,24 @@ public class Athlete
         return Age;    
     }
     
+    /**
+     * returns gender
+     */
     public Gender getGender()
     {
         return gender;
     }
-    
+     
+    /**
+     * adds activity from activities list
+     */
     public void addActivity(Activities activity) {
         activities.add(activity);
     }
     
+    /**
+     * returns activities
+     */
     public List<Activities> getActivities() {
         return activities;
     }

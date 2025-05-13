@@ -6,8 +6,7 @@ import java.util.*;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class
-        Main
+public class Main
 {
     private Athlete athlete;
     private Activities activitie;
@@ -163,8 +162,6 @@ public class
         }
     }
 
-
-
     public void listActivitiesByAthlete(Scanner scanner)
     {
         System.out.println("Enter the athlete's full name:");
@@ -180,11 +177,6 @@ public class
             }
         }
      }
-    
-    public void listActivitiesByMode()
-    {
-    
-    }
     
     public void getDistanceByAthlete()
     {
@@ -203,8 +195,7 @@ public class
         }
       }
       System.out.println("Athlete not found.");
-    }
- 
+    } 
     
      public static void main(String[] args) {
         Main app = new Main();
