@@ -3,8 +3,6 @@ import java.util.*;
 /**
  * Write a description of class Main here.
  *
- * @author (your name)
- * @version (a version number or a date)
  */
 public class Main
 {
@@ -21,7 +19,10 @@ public class Main
         
     }
     
-    public void Start()
+    /**
+     * runs the main class
+     */
+    public void start()
     {
       Scanner scanner = new Scanner(System.in);
       System.out.println("Welcome! This is an app like Strava\nwhere you can log your activities.");
@@ -80,6 +81,9 @@ public class Main
       scanner.close();
     }
     
+    /**
+     * calls createAthlete method from the Athlete class & prints out the returns
+     */
     private void addAthlete(Scanner scanner)
     {
         Athlete athlete = Athlete.createAthlete();
@@ -91,6 +95,9 @@ public class Main
         System.out.println("Athlete's Gender: " + athlete.getGender());
     }
 
+    /**
+     * 
+     */
     public void addActivity(Scanner scanner)
     {
         System.out.println("Enter the full name of the athlete:");
@@ -134,7 +141,9 @@ public class Main
         }
     }
 
-
+    /**
+     * prints all athletes registered
+     */
     public void listAllAthletes()
     {
         System.out.println("List of Athletes:");
@@ -143,6 +152,9 @@ public class Main
         }
     }
 
+    /**
+     * prints all activities registered by all athletes
+     */
     public void listAllActivities()
     {
         System.out.println("List of All Activities:");
@@ -162,6 +174,9 @@ public class Main
         }
     }
 
+    /**
+     * prints the activities the athlete registered
+     */
     public void listActivitiesByAthlete(Scanner scanner)
     {
         System.out.println("Enter the athlete's full name:");
@@ -177,6 +192,7 @@ public class Main
             }
         }
      }
+    
     
     public void getDistanceByAthlete()
     {
@@ -197,8 +213,9 @@ public class Main
       System.out.println("Athlete not found.");
     } 
     
+    
      public static void main(String[] args) {
         Main app = new Main();
-        app.Start();
+        app.start();
     }
 }

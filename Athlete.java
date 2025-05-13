@@ -1,10 +1,8 @@
 import java.util.*;
 
 /**
- * 
+ * creates an athlete and returns the details of the athlete
  *
- * @author (Emelie Mejia-Cornejo)
- * @version (5/13/2025)
  */
 public class Athlete
 {
