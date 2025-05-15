@@ -1,4 +1,7 @@
-
+/**
+ * class that holds the powered activities and is prompted when user chooses a powered activity when creating a new activity
+ * 
+ */
 public class PoweredActivities extends Activities
 {
     private Equipment equipment;

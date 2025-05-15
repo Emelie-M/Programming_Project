@@ -27,6 +27,9 @@ public class Activities
         this.description = description;
     }
 
+    /**
+     * User is prompted to input information about the activity they are adding
+     */
     
     public static Activities createFromUserInput()
     {
@@ -70,30 +73,51 @@ public class Activities
         return new Activities(name, distance, duration, mode, weight, description);
     }
 
+    /**
+     * title of activity
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * distance of activity(input 0 if activity doesnt require a distance)
+     */
     public double getDistance() {
         return distance;
     }
 
+    /**
+     * distance of activity
+     */
     public double getDuration() {
         return duration;
     }
 
+    /**
+     * type of activity that the user will be prompted with to choose
+     */
     public Modality getMode() {
         return mode;
     }
 
+    /**
+     * gets the athletes weight
+     */
     public double getAthleteWeight() {
         return athleteWeight;
     }
 
+    /**
+     * user inputs a description of the activity they created
+     */
     public String getDescription() {
         return description;
     }
 
+    /**
+     * calculates the calories burned by modality
+     */
     public double getCaloriesBurned()
     {
         double met;

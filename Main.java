@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Write a description of class Main here.
+ * Main class used to run the program and start the Strava like program
  *
  */
 public class Main
@@ -21,8 +21,9 @@ public class Main
     
     /**
      * runs the main class
+     * This method is used to start
      */
-    // This method is used to start
+     
     public void start()
     {
       Scanner scanner = new Scanner(System.in);
@@ -84,8 +85,8 @@ public class Main
     
     /**
      * calls createAthlete method from the Athlete class & prints out the returns
+     * This method is used to addathlete
      */
-    // This method is used to addathlete.
     private void addAthlete(Scanner scanner)
     {
         Athlete athlete = Athlete.createAthlete();
@@ -145,8 +146,8 @@ public class Main
 
     /**
      * prints all athletes registered
+     * This method is used to list all athletes.
      */
-     // This method is used to listallathletes.
     public void listAllAthletes()
     {
         System.out.println("List of Athletes:");

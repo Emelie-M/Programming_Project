@@ -1,9 +1,6 @@
 
 /**
- * Enumeration class Gender - write a description of the enum class here
- *
- * @author (your name here)
- * @version (version number or date here)
+ *  Gender enumeration class that lists all genders to choose from
  */
 public enum Gender
 {

@@ -9,22 +9,30 @@ public class Equipment {
     // Static list to track all registered equipment
     private static List<Equipment> registeredEquipment = new ArrayList<>();
 
-    // Constructor
+    /** 
+     * Constructor
+     */
     public Equipment(String name) {
         this.name = name;
     }
 
-    // Getter
+    /** 
+     * Getter
+     */
     public String getName() {
         return name;
     }
 
-    // Register a new piece of equipment
+    /** Register a new piece of equipment
+     * 
+     */
     public static void register(String name) {
         registeredEquipment.add(new Equipment(name));
     }
 
-    // Show all registered equipment
+    /**Show all registered equipment
+     * 
+     */
     public static void listAllRegistered() {
         System.out.println("Available Equipment:");
         for (Equipment e : registeredEquipment) {
@@ -32,7 +40,9 @@ public class Equipment {
         }
     }
 
-    // Prompt user to select equipment from registered list
+    /** Prompt user to select equipment from registered list
+     * 
+     */
     public static Equipment selectEquipmentFromUser() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -49,7 +59,11 @@ public class Equipment {
             System.out.println("Invalid input. Please try again.");
         }
     }
-    // This method is used to tostring.
+    
+    /**
+     * This method is used to tostring.
+     */
+     
     @Override
     public String toString() {
         return name;

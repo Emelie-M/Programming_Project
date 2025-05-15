@@ -1,9 +1,8 @@
 
 /**
- * Enumeration class Modality - write a description of the enum class here
+ * Modality enumeration class which lists all modalties for the user to choose from
  *
- * @author (your name here)
- * @version (version number or date here)
+ * 
  */
 public enum Modality
 {
