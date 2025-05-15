@@ -22,6 +22,7 @@ public class Main
     /**
      * runs the main class
      */
+    // This method is used to start
     public void start()
     {
       Scanner scanner = new Scanner(System.in);
@@ -84,6 +85,7 @@ public class Main
     /**
      * calls createAthlete method from the Athlete class & prints out the returns
      */
+    // This method is used to addathlete.
     private void addAthlete(Scanner scanner)
     {
         Athlete athlete = Athlete.createAthlete();
@@ -96,7 +98,7 @@ public class Main
     }
 
     /**
-     * 
+     *This method is used to add an activity. 
      */
     public void addActivity(Scanner scanner)
     {
@@ -144,6 +146,7 @@ public class Main
     /**
      * prints all athletes registered
      */
+     // This method is used to listallathletes.
     public void listAllAthletes()
     {
         System.out.println("List of Athletes:");
@@ -193,8 +196,11 @@ public class Main
         }
      }
     
+    /**
+     * This method is used to get distance by athlete.
+     */
     
-    public void getDistanceByAthlete()
+     public void getDistanceByAthlete()
     {
       Scanner scanner = new Scanner(System.in);
       System.out.println("Enter the athlete's full name:");
@@ -213,7 +219,9 @@ public class Main
       System.out.println("Athlete not found.");
     } 
     
-    
+    /**
+     * used to start the program
+     */
      public static void main(String[] args) {
         Main app = new Main();
         app.start();

@@ -49,7 +49,7 @@ public class Equipment {
             System.out.println("Invalid input. Please try again.");
         }
     }
-
+    // This method is used to tostring.
     @Override
     public String toString() {
         return name;

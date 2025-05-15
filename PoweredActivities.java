@@ -9,12 +9,18 @@ public class PoweredActivities extends Activities
         super(name, distance, duration, mode, athleteWeight, description);
         this.equipment = equipment;
     }
-
+    
+    /**
+     *  This method is used to get equipment.
+     */
     public Equipment getEquipment()
     {
         return equipment;
     }
-
+    
+    /**
+     *  This method is used to tostring.
+     */
     @Override
     public String toString()
     {
