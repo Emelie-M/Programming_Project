@@ -1,6 +1,12 @@
 
 import java.util.Scanner;
-
+/**
+ * This class is used to create a new activity for a specific athlete calculating his or her 
+ * calories burned distance logged.
+ * 
+ * 
+ * 
+ */
 public class Activities
 {
     private String name;          // e.g. “Morning Spin”
