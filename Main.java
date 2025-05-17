@@ -10,7 +10,7 @@ public class Main
     private Activities activitie;
     List<Athlete> athletes = new ArrayList<>(); 
     List<Activities> activities = new ArrayList<>();
-
+  
     /**
      * Constructor for objects of class Main
      */
