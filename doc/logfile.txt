@@ -1,0 +1,170 @@
+Project documentation
+<---- javadoc command: ---->
+C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\BlueJ\jdk\bin\javadoc.exe
+-sourcepath
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy
+-source
+21
+-classpath
+C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\bluejcore.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx-base-21.0.3-win.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx-controls-21.0.3-win.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx-fxml-21.0.3-win.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx-graphics-21.0.3-win.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx-media-21.0.3-win.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx-swing-21.0.3-win.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx-web-21.0.3-win.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-4.12.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-jupiter-5.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-jupiter-api-5.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-jupiter-engine-5.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-jupiter-params-5.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-platform-commons-1.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-platform-engine-1.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-platform-launcher-1.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-platform-suite-api-1.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\junit-vintage-engine-5.5.2.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\hamcrest-core-1.3.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\opentest4j-1.2.0.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\lang-stride.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.base.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.controls.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.fxml.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.graphics.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.media.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.properties.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.swing.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_1\BlueJ-windows-541\bluej\lib\javafx\javafx.web.jar;C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy
+-d
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-doctitle
+Programming_Project-master-copy
+-windowtitle
+Programming_Project-master-copy
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-link
+https://docs.oracle.com/en/java/javase/21/docs/api/
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/Activities.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/AthleteTest.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/Equipment.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/PoweredActivities.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/Gender.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/Athlete.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/Main.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/Modality.java
+C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy/ActivitiesTest.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\Activities.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\AthleteTest.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\Equipment.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\PoweredActivities.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\Gender.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\Athlete.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\Main.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\Modality.java...
+Loading source file C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\ActivitiesTest.java...
+Constructing Javadoc information...
+warning: unknown enum constant Status.STABLE
+  reason: class file for org.apiguardian.api.API$Status not found
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+warning: unknown enum constant Status.STABLE
+Building index for all the packages and classes...
+Standard Doclet version 21.0.4+7-LTS
+Building tree for all the packages and classes...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\Activities.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\ActivitiesTest.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\Athlete.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\AthleteTest.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\Equipment.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\Gender.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\Main.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\Modality.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\PoweredActivities.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\package-summary.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\package-tree.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\overview-tree.html...
+Building index for all classes...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\allclasses-index.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\allpackages-index.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\index-all.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\search.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\index.html...
+Generating C:\Users\Émilie\OneDrive - Vanier College\Programming_Project-master-copy\doc\help-doc.html...
+100 warnings
